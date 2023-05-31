@@ -1,0 +1,81 @@
+.title {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+h1 {
+    color: #a62824;
+}
+
+.box {
+    display: flex;
+}
+
+.right {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+
+.LowerBounds {
+    float: left;
+    background-color: #eaeff1;
+    border: 1px solid #e1e9ec;
+    width: 340px;
+    height: 550px;
+    padding-left: 15px;
+    border-radius: 1%;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.header{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 1000;
+    margin-bottom: 20px;
+}
+
+.Histogram {
+    background-color: #eaeff1;
+    border: 1px solid #e1e9ec;
+    margin-bottom: 15px;
+    border-radius: 1%;
+    height: 65%;
+    width: 300px;
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.grade {
+    background-color: #eaeff1;
+    border: 1px solid #e1e9ec;
+    border-radius: 1%;
+    height: 35%;
+    width: 300px;
+    padding-left: 15px;
+    font-size: 12px;
+    font-weight: 550;
+}
+
+.LowerBoundsTable {
+    line-height: 35px;
+}
+
+.histogramTable {
+    line-height: 20px;
+}
+
+input {
+    height: 22px;
+    text-align:right;
+}
+
+
+
+

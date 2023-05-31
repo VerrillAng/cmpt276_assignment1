@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="/css/histogram.css">
+    <script src="/js/calculate.js" defer></script>
+</head>
+<body>
+    <h1 class="title">Histogram Generator</h1>
+    <div class="box">
+        <div class="LowerBounds">
+            <h1 class="header">Lower bounds</h1>
+            <table class="LowerBoundsTable" style="margin-left: 20px">
+                <tr>
+                    <td style="width: 40%" class="td">Max </td>
+                    <td><input id="max" type="number" style="width: 35%" value="100.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">A+</td>
+                    <td><input id="aplus" type="number" style="width: 35%" value="95.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">A</td>
+                    <td><input id="a" type="number" style="width: 35%" value="90.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">A-</td>
+                    <td><input id="amin" type="number" style="width: 35%" value="85.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">B+</td>
+                    <td><input id="bplus" type="number" style="width: 35%" value="80.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">B</td>
+                    <td><input id="b" type="number" style="width: 35%" value="75.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">B-</td>
+                    <td><input id="bmin" type="number" style="width: 35%" value="70.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">C+</td>
+                    <td><input id="cplus" type="number" style="width: 35%" value="65.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">C</td>
+                    <td><input id="c" type="number" style="width: 35%" value="60.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">C-</td>
+                    <td><input id="cmin" type="number" style="width: 35%" value="55.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">D</td>
+                    <td><input id="d" type="number" style="width: 35%" value="50.00"></td>
+                </tr>
+                <tr>
+                    <td class="td">F</td>
+                    <td><input id="ft" type="number" style="width: 35%" value="0.00"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="right">
+            <div class="Histogram">
+                <h1 class="header">Histogram</h1>
+                <table class="histogramTable" style="margin-left: 20px">
+                    <tr>
+                        <td style="width:120px">A+</td>
+                        <td class="Ap"><span class="ApSpan" id="ApSpan"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width: 120px">A</td>
+                        <td class="Ad" id="A"><span class="ASpan" id="ASpan"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">A-</td>
+                        <td class="A-"><span class="A-Span" id="A-Span"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">B+</td>
+                        <td class="Bp"><span class="BpSpan" id="BpSpan"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">B</td>
+                        <td class="Bd"><span class="BSpan" id="BSpan"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">B-</td>
+                        <td class="B-"><span class="B-Span" id="B-Span"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">C+</td>
+                        <td class="Cp"><span class="CpSpan" id="CpSpan"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">C</td>
+                        <td class="Cd"><span class="CSpan" id="CSpan"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">C-</td>
+                        <td class="C-"><span class="C-Span" id="C-Span"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">D</td>
+                        <td class="Dd"><span class="DSpan" id="DSpan"></span></td>
+                    </tr>
+                    <tr>
+                        <td style="width:120px">F</td>
+                        <td class="Fd"><span class="FSpan" id="FSpan"></span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="grade">
+                <p>New Grade: <input type=number min="0" max="100" style="width: 35%" id="newGrade" ></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
